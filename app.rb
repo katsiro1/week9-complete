@@ -58,6 +58,7 @@ end
 
 post "/users/create" do
     puts params
+    sasd = 3
     hashed_password = BCrypt::Password.create(params["password"])
     users_table.insert(name: params["name"], email: params["email"], password: hashed_password)
     view "create_user"
