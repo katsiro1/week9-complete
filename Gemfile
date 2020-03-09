@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'sequel'
 gem 'sinatra'
 gem 'sinatra-contrib'
 group :development do 
